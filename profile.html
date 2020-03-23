@@ -3,60 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    <title>院長・スタッフ紹介|けやきクリニック</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1010468d87.js"
       crossorigin="anonymous"
-    />
-    <style>
-      .profile-img-size {
-        width: 200px;
-        height: 200px;
-      }
-      .fz-175 {
-        font-size: 1.75rem;
-      }
-      .fz-15 {
-        font-size: 1.5rem;
-      }
-    </style>
+    ></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-top bg-white shadow-sm">
       <div class="alert alert-info mb-0 rounded-0 alert-dismissible fade show">
         Attention：このサイトはWEB制作のポートフォリオとして作成されました。そのため、記載されている全ての情報は架空のものであり、実在しません。また、同名の実在する人物や団体などとは関係ありません。
         <button class="close" data-dismiss="alert">
           &times;
         </button>
       </div>
-      <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-light">
-          <a href="index.html" class="navbar-brand text-info"
-            >けやきデンタルクリニック</a
-          >
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="profile.html" class="nav-link">院長・スタッフ紹介</a>
-              </li>
-              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Link</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-sm navbar-light d-flex">
+        <a href="index.html" class="navbar-brand text-info navbar mr-auto"
+          >けやきデンタルクリニック</a
+        >
+        <button type="button" class="btn btn-info">
+          <i class="fas fa-phone-alt"></i>TEL
+        </button>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">TOP</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link active"
+                >院長・スタッフ紹介</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="reserve.html" class="nav-link">WEB予約</a>
+            </li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <section class="py-5 bg-light ">
+    <section class="pt-5 bg-light ">
       <h2 class="text-center font-weight-bold fz-175 mb-3">
         院長・スタッフ紹介
       </h2>
@@ -82,15 +76,15 @@
             <!-- 院長写真 -->
             <div class="col-md-4">
               <img
-                src="img/humberto-chavez-FVh_yqLR9eA-unsplash.jpg"
+                src="dist/humberto-chavez-FVh_yqLR9eA-unsplash.jpg"
                 alt="..."
-                class="rounded-sm profile-img-size d-block m mx-auto"
+                class="rounded-sm profile-img-size d-block mx-auto"
               />
             </div>
             <!-- 院長名前・略歴 -->
             <div class="my-3 col-md-8">
               <h1 class="font-weight-bold fz-15">笹川 真理子</h1>
-              <p>
+              <p class="">
                 お客様とのコミュニケーションを第一に、お客様の歯の健康を守るお手伝いをさせていただきたいと思います。お客様ひとりひとりに、それぞれのご要望があり、そのようなご要望にお応えすることこそ、私どもの使命です。
               </p>
 
@@ -122,53 +116,200 @@
         </div>
         <div id="staff" class="tab-pane">
           <!-- 医師紹介パン -->
-          <div class="col-9 mx-auto">
-            <div class="card-deck">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-GnLuuG9crEY-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">桜川 灯</h5>
+                    <p class="card-text">
+                      "お客様とのコミュニケーションを大切にします。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
               <!-- カード -->
-
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="img/h-shaw-Dqrlp6cMLkE-unsplash.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">丸川 陽子</h5>
-                  <p class="card-text">
-                    2015年 令和大学 令和学部 歯学科 卒業
-                  </p>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-VMCU_t2ZL0g-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">東堂 彰子</h5>
+                    <p class="card-text">
+                      "冷静な判断力と技術でスピード感のある治療を目指します。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- カード -->
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/h-shaw-Dqrlp6cMLkE-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">丸川 陽子</h5>
+                    <p class="card-text">
+                      "痛みの少ない治療を心がけています。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2015年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <!-- カード -->
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-VMCU_t2ZL0g-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">東堂 彰子</h5>
+                    <p class="card-text">
+                      "冷静な判断力と技術でスピード感のある治療を目指します。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <!-- カード -->
-
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="img/cdc-GnLuuG9crEY-unsplash.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">桜川 灯</h5>
-                  <p class="card-text">
-                    2002年 令和大学 令和学部 歯学科 卒業
-                  </p>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/h-shaw-Dqrlp6cMLkE-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">丸川 陽子</h5>
+                    <p class="card-text">
+                      "痛みの少ない治療を心がけています。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2015年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- カード -->
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-GnLuuG9crEY-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">桜川 灯</h5>
+                    <p class="card-text">
+                      "お客様とのコミュニケーションを大切にします。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <!-- カード -->
+                <div class="card mb-4">
+                  <img
+                    src="dist/h-shaw-Dqrlp6cMLkE-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">丸川 陽子</h5>
+                    <p class="card-text">
+                      "痛みの少ない治療を心がけています。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2015年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- カード -->
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-GnLuuG9crEY-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">桜川 灯</h5>
+                    <p class="card-text">
+                      "お客様とのコミュニケーションを大切にします。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <!-- カード -->
-
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="img/cdc-VMCU_t2ZL0g-unsplash.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">東堂 彰子</h5>
-                  <p class="card-text">
-                    2006年 令和大学 令和学部 歯学科 卒業
-                  </p>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img
+                    src="dist/cdc-VMCU_t2ZL0g-unsplash.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">東堂 彰子</h5>
+                    <p class="card-text">
+                      "冷静な判断力と技術でスピード感のある治療を目指します。"
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted"
+                        >2002年 令和大学 令和学部 歯学科 卒業</small
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,6 +317,9 @@
         </div>
       </div>
     </section>
+    <footer class="bg-dark text-center text-light py-1 ">
+      <small>(c)2020 けやきデンタルクリニック</small>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -193,5 +337,6 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="dist/app.js"></script>
   </body>
 </html>

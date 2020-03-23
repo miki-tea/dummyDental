@@ -1,0 +1,71 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+a {
+  transition: all 0.5s;
+}
+.hero-card {
+  border: none;
+  border-radius: none;
+}
+.card-img {
+  border-radius: 0;
+}
+.card-img-overlay {
+  padding: 0;
+  top: calc(50% - 2rem);
+  text-align: center;
+  font-weight: bold;
+  @include media-breakpoint-up(sm) {
+    top: calc(50% - 0.5rem);
+  }
+}
+.fz-175 {
+  font-size: 1.75rem;
+}
+.fz-15 {
+  font-size: 1.5rem;
+}
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 2px solid #ccc;
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.fa-phone-alt {
+  margin-right: 0.1rem;
+  position: relative;
+  top: 1px;
+  font-size: 1.3rem;
+}
+.profile-img-size {
+  width: 200px;
+  height: 200px;
+}
+
+br {
+  display: block;
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+.js-fadeIn {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 1s;
+}
+.js-fadeIn.js-scrollIn {
+  opacity: 1;
+  transform: translate(0, 0);
+}
