@@ -3,9 +3,16 @@
 a {
   transition: all 0.5s;
 }
-.hero-card {
-  border: none;
-  border-radius: none;
+.hero {
+  &__card {
+    border: none;
+    border-radius: none;
+  }
+  &__title {
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+    }
+  }
 }
 .card-img {
   border-radius: 0;
